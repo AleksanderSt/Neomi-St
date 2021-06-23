@@ -12,6 +12,9 @@
 			<div class="header-nav">
 				<a href="#" class="logo"><img src="svg/noemi-logo.svg" alt="logo"></a>
 				<nav class="nav">
+					<button class="nav-btn">
+						<span class="nav-btn-lable">Открыть меню</span>
+					</button>
 					<ul class="nav-list">
 						<li class="nav-item">
 							<a href="#" class="nav-item-link">Главная</a>
@@ -36,7 +39,7 @@
 			</div>
 			<div class="header-offer">
 				<h1 class="header-offer-title">
-					Блог о творчестве, спорте, <br>и образе жизни
+					Блог о творчестве, спорте, <br class="title-br"> и образе жизни
 				</h1>
 			</div>
 		</div>
@@ -109,7 +112,7 @@
 			<main class="main">
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post1.jpg" alt="post">
+							<img src="image/last-post1.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -132,7 +135,7 @@
 					</article>
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post2.jpg" alt="post">
+							<img src="image/last-post2.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -155,7 +158,7 @@
 					</article>
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post3.jpg" alt="post">
+							<img src="image/last-post3.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -170,15 +173,14 @@
 							</div>
 							<p class="card-text-description">
 								Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-							</p>
-							<p class="card-text-description">
+								<br>
 								Мы составили список лучших летних фестивалей по всему миру.
 							</p>
 						</div>
 					</article>
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post4.jpg" alt="post">
+							<img src="image/last-post4.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -201,7 +203,7 @@
 					</article>
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post5.jpg" alt="post">
+							<img src="image/last-post5.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -227,7 +229,7 @@
 					</article>
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post6.jpg" alt="post">
+							<img src="image/last-post6.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -250,7 +252,7 @@
 					</article>
 					<article class="card">
 						<div class="card-img">
-							<img src="image/last-post4.jpg" alt="post">
+							<img src="image/last-post4.jpg" alt="post" class="card-img-picture">
 						</div>
 						<div class="card-text">
 							<ul class="card-text-list">
@@ -423,8 +425,13 @@
 		<div class="products-cards">
 			<article class="products-card">
 				<picture class="products-card-picture">
-					<source >
-						<img src="image/shop-item-desk1.jpg" alt="post" class="products-card-picture-img">
+					<source 
+						media="(max-width: 767px)"
+						srcset="image/shop-item-mobile1.jpg">
+					<source 
+						media="(max-width: 1200px)"
+						srcset="image/shop-item-tablet1.jpg">
+					<img src="image/shop-item-desk1.jpg" alt="post" class="products-card-picture-img">
 				</picture>
 				<div class="products-card-offer">
 					<h3 class="products-card-title">
@@ -446,8 +453,13 @@
 			</article>
 			<article class="products-card">
 				<picture class="products-card-picture">
-					<source >
-						<img src="image/shop-item-desk2.jpg" alt="post" class="products-card-picture-img">
+					<source 
+						media="(max-width: 767px)"
+						srcset="image/shop-item-mobile2.jpg">
+					<source 
+						media="(max-width: 1200px)"
+						srcset="image/shop-item-tablet2.jpg">
+					<img src="image/shop-item-desk2.jpg" alt="post" class="products-card-picture-img">
 				</picture>
 				<div class="products-card-offer">
 					<h3 class="products-card-title">
@@ -469,8 +481,13 @@
 			</article>
 			<article class="products-card">
 				<picture class="products-card-picture">
-					<source >
-						<img src="image/shop-item-desk3.jpg" alt="post" class="products-card-picture-img">
+					<source 
+						media="(max-width: 767px)"
+						srcset="image/shop-item-mobile3.jpg">
+					<source 
+						media="(max-width: 1200px)"
+						srcset="image/shop-item-tablet3.jpg">
+					<img src="image/shop-item-desk3.jpg" alt="post" class="products-card-picture-img">
 				</picture>
 				<div class="products-card-offer">
 					<h3 class="products-card-title">
@@ -492,42 +509,40 @@
 			</article>
 		</div>
 	</section>
-	<footer class="footer">
-		<div class="container-footer">
-			<address class="contacts">
-				<ul class="social-list">
-					<li class="social-list-item">
-						<a href="#" class="social-icon social-icon_twitter">
-							<span class="scrinreader">Профиль в Twitter</span>
-						</a>
-					</li>
-					<li class="social-list-item">
-						<a href="#" class="social-icon social-icon_pinterest">
-							<span class="scrinreader">Профиль в Twitter</span>
-						</a>
-					</li>
-					<li class="social-list-item">
-						<a href="#" class="social-icon social-icon_facebook">
-							<span class="scrinreader">Профиль в Twitter</span>
-						</a>
-					</li>
-					<li class="social-list-item">
-						<a href="#" class="social-icon social-icon_instagram">
-							<span class="scrinreader">Профиль в Twitter</span>
-						</a>
-					</li>
-					<li class="social-list-item">
-						<a href="#" class="social-icon social-icon_tumbler">
-							<span class="scrinreader">Профиль в Twitter</span>
-						</a>
-					</li>
-				</ul>
-			</address>
-			<div class="end">
-				<p class="end-text">
-					Copyright © 2009–2019 City Blog LLC.
-				</p>
-			</div>
+	<footer class="container-footer">
+		<address class="contacts">
+			<ul class="social-list">
+				<li class="social-list-item">
+					<a href="#" class="social-icon social-icon_twitter">
+						<span class="scrinreader">Профиль в Twitter</span>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a href="#" class="social-icon social-icon_pinterest">
+						<span class="scrinreader">Профиль в Twitter</span>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a href="#" class="social-icon social-icon_facebook">
+						<span class="scrinreader">Профиль в Twitter</span>
+					</a>
+				</li>
+				<li class="social-list-item">
+					<a href="#" class="social-icon social-icon_instagram">
+						<span class="scrinreader">Профиль в Twitter</span>
+					</a>					
+				</li>
+				<li class="social-list-item">
+					<a href="#" class="social-icon social-icon_tumbler">
+						<span class="scrinreader">Профиль в Twitter</span>
+					</a>					
+				</li>
+			</ul>
+		</address>
+		<div class="end">
+			<p class="end-text">					
+				Copyright © 2009–2019 City Blog LLC.
+			</p>
 		</div>
 	</footer>
 	<section class="popup _hidden">
